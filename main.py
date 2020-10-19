@@ -14,4 +14,7 @@ password.send_keys('Excelchat153$$$')
 submit = browser.find_element_by_id('login-button')
 submit.click()
 sleep(10)
+result = browser.current_url
+if result == 'https://www.got-it.ai/solutions/excel-chat/home':
+    print('Success')
 browser.close()
